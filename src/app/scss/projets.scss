@@ -1,0 +1,225 @@
+section.main_projet--container
+{
+    /* background-color:antiquewhite; */
+    display: flex;
+}
+
+div.main_projet--module
+{
+    height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    font-family: 'AvantGarde', Arial, Helvetica, sans-serif;
+    /* background-color: aqua; */
+}
+
+div.main_projet--module a
+{
+    text-decoration: none;
+    color: black;
+}
+
+div.main_projet--module a:visited
+{
+    text-decoration: none;
+    color: black;
+}
+
+div.main_projet--module p
+{
+    margin-top: 20px;
+    width: 50%;
+    font-size: 20px;
+    text-align: center;
+    /* background-color: antiquewhite; */
+}
+
+/* div.main_projet--img
+{
+    height: 300px;
+    width: 300px;
+} */
+
+div.main_projet--module img
+{
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+div.main_projet--module img:hover
+{
+    filter: grayscale(0%);
+}
+
+/*----------------MEDIA QUERIES------------------*/
+
+@media screen and (min-width: 660px) and (max-width: 1280px) 
+{
+    nav.main_navigation--fixed
+    {
+        height: 20vh;
+        width: 100vw;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        position: relative;
+        
+        /* background-color: antiquewhite; */
+    }
+
+    div.main_projet--module a
+    {
+        text-decoration: none;
+        color: black;
+    }
+    
+    section.main_projet--container
+    {
+        /* background-color:antiquewhite; */
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    div.main_projet--module
+    {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'AvantGarde', Arial, Helvetica, sans-serif;
+        /* background-color: aqua; */
+    }
+
+    div.main_projet--module img
+{
+    cursor: pointer;
+    filter: grayscale(0%);
+}
+
+    div.main_projet--module p
+    {
+        margin-top: 20px;
+        width: 80%;
+        font-size: 20px;
+        text-align: center;
+        /* background-color: antiquewhite; */
+    }
+
+    footer.main_footer--fixed
+{
+    height: 10vh;
+    width: 100vw;
+
+    font-family: 'AvantGarde', Arial, Helvetica, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 15px;
+    /* background-color: yellow; */
+
+    position: relative;
+
+}
+
+}
+
+
+@media screen and (max-width: 660px) 
+{
+    nav.main_navigation--fixed
+    {
+        height: 20vh;
+        width: 100vw;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        position: relative;
+        
+        /* background-color: antiquewhite; */
+    }
+    
+    section.main_projet--container
+    {
+        /* background-color:antiquewhite; */
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    div.main_projet--module
+    {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'AvantGarde', Arial, Helvetica, sans-serif;
+        margin-bottom: 60px;
+        /* background-color: yellow; */
+    }
+
+    div.main_projet--module a
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+    div.main_projet--img
+    {
+        height: 310px;
+        width: 310px;
+    }
+
+    div.main_projet--module img
+    {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        filter: grayscale(0%);
+        padding: 15px;
+        padding: 15px;
+    }
+
+    div.main_projet--module p
+    {
+        margin-top: 5px;
+        width: 80%;
+        font-size: 15px;
+        text-align: center;
+        color: black;
+        /* background-color: antiquewhite; */
+    }
+
+    footer.main_footer--fixed
+    {
+        height: 10vh;
+        width: 100vw;
+
+        font-family: 'AvantGarde', Arial, Helvetica, sans-serif;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        padding-bottom: 15px;
+        /* background-color: yellow; */
+
+        position: relative;
+
+    }
+
+}

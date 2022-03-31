@@ -1,0 +1,22 @@
+nav.page_navigation
+{
+    height: 10vh;
+    width: 100vw;
+/* 
+    background-color: aqua; */
+
+    display: flex;
+    justify-content: space-between;
+}
+
+div.page_navigation--logo
+{
+    margin-left: 2vw;
+    cursor: pointer;
+}
+
+div.page_navigation--logo img
+{
+    height: 80px;
+    width: 80px;
+}

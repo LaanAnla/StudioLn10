@@ -1,0 +1,70 @@
+button.member_modal--close,
+button.member_modal--close--img
+{
+    position: fixed;
+    top: 2vh;
+    right: 3vw;
+    border: none;
+    z-index: 4;
+    cursor: pointer;
+    display: none;
+}
+
+button.member_modal--close img,
+button.member_modal--close--img img
+{
+    position: fixed;
+    top: 2vh;
+    right: 2vw;
+    border: none;
+    z-index: 5;
+    cursor: pointer;
+}
+
+div.member_modal--img
+{
+    background: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: 0.25s ease-out;
+    z-index: 2;
+    display: none;
+
+}
+
+div.member_modal--img img
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 90%;
+    max-width: 80%;
+}
+
+div.member_modal--video
+{
+    background: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: 0.25s ease-out;
+    z-index: 3;
+    display: none;
+}
+
+div.member_modal--video video
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 90%;
+    max-width: 80%;
+}
+

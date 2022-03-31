@@ -1,0 +1,87 @@
+div.member_introduction
+{
+    height: 20vh;
+    width: 100vw;
+
+    /* background-color: beige; */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+div.member_introduction h1
+{
+    font-family: 'AvantGardeMedium', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: calc(25px + (80 - 25) * ((100vw - 360px) / (1600 - 360)));
+}
+
+div.member_introduction h2
+{
+    font-family: 'AvantGarde', Arial, Helvetica, sans-serif;
+    font-size: calc(15px + (25 - 15) * ((100vw - 360px) / (1600 - 360)));
+
+    text-align: center;
+    width: 80%;
+}
+
+
+div.member_work
+{
+    height: auto;
+    width: 1800px;
+    max-width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px auto 10px;
+
+}
+
+div.member_image--container
+{
+    height: 330px;
+    width: 330px;
+    overflow: hidden;
+}
+
+div.member_image--container img,
+div.member_image--container video
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top left;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+div.member_image--container:hover img,
+div.member_image--container:hover video
+{
+    transform: scale(1.05);
+}
+
+div.member_social
+{
+    height: 10vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    flex-grow: 1;
+
+    // background-color: aquamarine;
+}
+
+div.member_social img
+{
+    height: 24px;
+    width: 24px;
+}

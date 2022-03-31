@@ -1,0 +1,102 @@
+nav.main_navigation {
+
+    height: 20vh;
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    // background-color: aquamarine;
+
+}
+
+div.main_navigation--logo {
+    grid-column: 2 / 3;
+    justify-self: center;
+}
+
+div.main_navigation--logo img
+{
+    height: 140px;
+    width: 140px;
+    margin-bottom: 10px;
+}
+
+div.main_navigation--burger
+{
+    height: 30px;
+    width: 30px;
+
+    justify-self: end;
+    align-self: start;
+    
+    margin-right: 2vw;
+    margin-top: 2vh;
+    cursor: pointer;
+    z-index: 2;
+}
+
+div.main_navigation--burger > div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    position: relative;
+}
+
+div.main_navigation--burger span
+{
+    background: black;
+    height: 1px;
+    width: 30px;
+    transition: 0.3s;
+    transform-origin: center;
+}
+
+div.main_navigation--burger.active span
+{
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+
+div.main_navigation--burger.active span:nth-child(1)
+{
+    top: 40%;
+    transform: rotate(45deg);
+    background: white;
+}
+
+div.main_navigation--burger.active span:nth-child(2)
+{
+    top: 40%;
+    transform: rotate(-45deg);
+    background: white;
+}
+
+div.main_navigation--burger.active span:nth-child(3)
+{
+    display: none;
+}
+
+/*-----------------MAIN NAVIGATION FIXED------------------*/
+
+nav.main_navigation--fixed
+{
+    height: 20vh;
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 3;
+    
+    /* background-color: antiquewhite; */
+}
